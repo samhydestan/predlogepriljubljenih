@@ -40,6 +40,11 @@
             <version>${kumuluzee-rest.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.kumuluz.ee.health</groupId>
+            <artifactId>kumuluzee-health</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
             <groupId>com.kumuluz.ee</groupId>
             <artifactId>kumuluzee-servlet-jetty</artifactId>
         </dependency>

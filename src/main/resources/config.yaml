@@ -7,3 +7,16 @@ kumuluzee:
     base-url: http://localhost:8081
     http:
       port: 8081
+  health:
+    servlet:
+      mapping: /health
+      enabled: true
+    logs:
+      enabled: true
+      level: INFO
+      period-s: 30
+    checks:
+      http-health-check:
+        connection-url: https://github.com/billcosbytouchedme/predlogepriljubljenih
+      disk-space-health-check:
+        threshold: 100000000
